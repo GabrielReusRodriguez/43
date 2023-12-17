@@ -1,0 +1,3 @@
+[submodule "CPiscine"]
+	path = CPiscine
+	url = git@github.com:GabrielReusRodriguez/CPiscine.git
