@@ -1,6 +1,3 @@
 [submodule "CPiscine"]
 	path = CPiscine
 	url = git@github.com:GabrielReusRodriguez/CPiscine.git
-[submodule "mini-moulinette"]
-	path = mini-moulinette
-	url = git@github.com:khairulhaaziq/mini-moulinette.git
