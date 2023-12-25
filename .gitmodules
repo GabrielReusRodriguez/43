@@ -1,3 +1,6 @@
 [submodule "CPiscine"]
 	path = CPiscine
 	url = git@github.com:GabrielReusRodriguez/CPiscine.git
+[submodule "Piscine-Reloaded"]
+	path = Piscine-Reloaded
+	url = git@github.com:GabrielReusRodriguez/Piscine-Reloaded.git
