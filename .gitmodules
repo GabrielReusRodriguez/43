@@ -4,3 +4,6 @@
 [submodule "Piscine-Reloaded"]
 	path = Piscine-Reloaded
 	url = git@github.com:GabrielReusRodriguez/Piscine-Reloaded.git
+[submodule "libft"]
+	path = libft
+	url = git@github.com:GabrielReusRodriguez/libft.git
