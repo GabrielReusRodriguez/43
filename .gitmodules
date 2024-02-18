@@ -19,3 +19,6 @@
 [submodule "so_long"]
 	path = so_long
 	url = git@github.com:GabrielReusRodriguez/43_so_long.git
+[submodule "pipex"]
+	path = pipex
+	url = git@github.com:GabrielReusRodriguez/pipex.git
