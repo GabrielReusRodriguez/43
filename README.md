@@ -10,6 +10,7 @@ Proyectos de mi paso por Badalona 43 (campus 42 Barcelona).
 | **Piscina Reloaded** | Repaso condensado (ex00–ex27) | [docs/PiscinaReloaded](docs/PiscinaReloaded/README.md) | [src/PiscinaReloaded](src/PiscinaReloaded) |
 | **Libft** | Librería C del Common Core (`libft.a`) | [docs/CommonCore/libft](docs/CommonCore/libft/README.md) | [src/CommonCore/libft](src/CommonCore/libft) |
 | **get_next_line** | Lectura línea a línea desde FD (`libgnl.a`) | [docs/CommonCore/gnl](docs/CommonCore/gnl/README.md) | [src/CommonCore/gnl](src/CommonCore/gnl) |
+| **pipex** | Pipeline tipo shell (`infile cmd1 \| cmd2 outfile`) | [docs/CommonCore/pipex](docs/CommonCore/pipex/README.md) | [src/CommonCore/pipex](src/CommonCore/pipex) |
 
 ## Norma
 
@@ -28,6 +29,10 @@ make -C src/CommonCore/libft
 
 # get_next_line (compilar libgnl.a; requiere libft)
 make -C src/CommonCore/gnl
+
+# pipex (ejecutable; requiere libft + gnl)
+make -C src/CommonCore/pipex
 ```
 
 Piscina Reloaded no tiene runner automatizado; ver [docs/PiscinaReloaded](docs/PiscinaReloaded/README.md) para pruebas manuales.
+
