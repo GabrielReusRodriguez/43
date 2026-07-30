@@ -67,6 +67,8 @@ Targets habituales: `all`, `clean`, `fclean`, `re`.
 
 **Nota:** Rush01 no está incluido en este repositorio.
 
+Para el repaso condensado posterior a la piscina, ver [Piscina Reloaded](../PiscinaReloaded/README.md).
+
 ## Convenciones
 
 - Código C orientado a la [Norminette](../../norma/norma_c.pdf) (`-Wall -Wextra -Werror`).
