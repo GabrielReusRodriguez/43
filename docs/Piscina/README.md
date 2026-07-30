@@ -1,6 +1,6 @@
 # Piscina (42 Barcelona)
 
-Recopilatorio de ejercicios de la **Piscina** de 42 Barcelona: Shell, C y Rush.
+Recopilatorio de ejercicios de la **Piscina** de 42 Barcelona: Shell, C, Rush y BSQ.
 
 ## Ubicación
 
@@ -64,6 +64,7 @@ Targets habituales: `all`, `clean`, `fclean`, `re`.
 | [C12](C12.md) | ex00–ex17 | Listas enlazadas |
 | [C13](C13.md) | ex00–ex07 | Árboles binarios |
 | [Rush00](Rush00.md) | ex00 | Rectángulo con patrón de bordes |
+| [BSQ](BSQ.md) | proyecto final | Biggest Square (mapa + cuadrado máximo) |
 
 **Nota:** Rush01 no está incluido en este repositorio.
 
@@ -88,3 +89,4 @@ Tras la integración:
 - **C05/ex00**: el test está comentado/vacío; el build pasa.
 - Shell: se valida presencia de scripts; algunos dependen del entorno (`/etc/passwd`, `ifconfig`/`ip`, git).
 - **Rush01** no está en el repositorio.
+- **BSQ**: entrega parcial (carga/impresión de mapas); no está en el Makefile raíz ni en el runner de tests.
