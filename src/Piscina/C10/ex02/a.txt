@@ -1,0 +1,4 @@
+
+Numero de bytes: 40
+FT_PARSE_FILE
+END FT_PARSE_FILE

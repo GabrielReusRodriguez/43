@@ -1,0 +1,61 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_put.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: greus-ro <greus-ro@student.42barcel>       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/12/08 22:00:58 by greus-ro          #+#    #+#             */
+/*   Updated: 2023/12/08 22:01:37 by greus-ro         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include <unistd.h>
+
+void	ft_putstr(char *str)
+{
+	while (*str != '\0')
+	{
+		write(1, str, 1);
+		str++;
+	}
+}
+
+void	ft_putline(char *str)
+{
+	ft_putstr(str);
+	write(1, "\n", 1);
+}
+
+void	ft_putchar(char c)
+{
+	write(1, &c, 1);
+}
+
+static void	ft_putnbr_positive(unsigned int nbr)
+{
+	char	digit;
+
+	if (nbr < 10)
+	{
+		digit = '0' + nbr;
+		ft_putchar(digit);
+		return ;
+	}
+	ft_putnbr_positive(nbr / 10);
+	ft_putnbr_positive(nbr % 10);
+}
+
+void	ft_putnbr(int nbr)
+{
+	unsigned int	number;
+
+	if (nbr < 0)
+	{
+		ft_putchar('-');
+		number = nbr * (-1);
+	}
+	else
+		number = nbr;
+	ft_putnbr_positive(number);
+}
