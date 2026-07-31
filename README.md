@@ -12,6 +12,7 @@ Proyectos de mi paso por Badalona 43 (campus 42 Barcelona).
 | **get_next_line** | Lectura línea a línea desde FD (`libgnl.a`) | [docs/CommonCore/gnl](docs/CommonCore/gnl/README.md) | [src/CommonCore/gnl](src/CommonCore/gnl) |
 | **pipex** | Pipeline tipo shell (`infile cmd1 \| cmd2 outfile`) | [docs/CommonCore/pipex](docs/CommonCore/pipex/README.md) | [src/CommonCore/pipex](src/CommonCore/pipex) |
 | **ft_printf** | Recreación de `printf` (`libftprintf.a`) | [docs/CommonCore/ft_printf](docs/CommonCore/ft_printf/README.md) | [src/CommonCore/ft_printf](src/CommonCore/ft_printf) |
+| **push_swap** | Ordenar un stack con operaciones limitadas | [docs/CommonCore/push_swap](docs/CommonCore/push_swap/README.md) | [src/CommonCore/push_swap](src/CommonCore/push_swap) |
 
 ## Norma
 
@@ -33,8 +34,12 @@ make -C src/CommonCore/gnl
 
 # pipex (ejecutable; requiere libft + gnl)
 make -C src/CommonCore/pipex
+
 # ft_printf (comparar con printf de glibc)
 ./tests/CommonCore/ft_printf/run_tests.sh
+
+# push_swap (checker_linux; n=3 y n=5)
+./tests/CommonCore/push_swap/run_tests.sh
 ```
 
 Piscina Reloaded no tiene runner automatizado; ver [docs/PiscinaReloaded](docs/PiscinaReloaded/README.md) para pruebas manuales.

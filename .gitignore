@@ -6,6 +6,7 @@ do-op
 ft_display_file
 ft_cat
 ft_tail
+src/CommonCore/push_swap/push_swap
 
 # Prerequisites
 *.d
