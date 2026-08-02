@@ -7,6 +7,9 @@ ft_display_file
 ft_cat
 ft_tail
 src/CommonCore/push_swap/push_swap
+src/CommonCore/philosophers/src/philo/philo
+src/CommonCore/philosophers/src/philo_bonus/philo
+src/CommonCore/philosophers/src/philo_bonus/bonus
 
 # Prerequisites
 *.d
