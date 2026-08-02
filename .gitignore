@@ -10,6 +10,9 @@ src/CommonCore/push_swap/push_swap
 src/CommonCore/philosophers/src/philo/philo
 src/CommonCore/philosophers/src/philo_bonus/philo
 src/CommonCore/philosophers/src/philo_bonus/bonus
+src/CommonCore/so_long/so_long
+src/CommonCore/so_long/bonus
+src/CommonCore/so_long/mlx/test/mlx-test
 
 # Prerequisites
 *.d
