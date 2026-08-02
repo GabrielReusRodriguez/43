@@ -14,6 +14,7 @@ Proyectos de mi paso por Badalona 43 (campus 42 Barcelona).
 | **ft_printf** | Recreación de `printf` (`libftprintf.a`) | [docs/CommonCore/ft_printf](docs/CommonCore/ft_printf/README.md) | [src/CommonCore/ft_printf](src/CommonCore/ft_printf) |
 | **push_swap** | Ordenar un stack con operaciones limitadas | [docs/CommonCore/push_swap](docs/CommonCore/push_swap/README.md) | [src/CommonCore/push_swap](src/CommonCore/push_swap) |
 | **philosophers** | Filósofos comensales (threads/mutexes y bonus procesos/semáforos) | [docs/CommonCore/philosophers](docs/CommonCore/philosophers/README.md) | [src/CommonCore/philosophers](src/CommonCore/philosophers) |
+| **so_long** | Juego 2D con MiniLibX (mapa `.ber`, coleccionables y salida) | [docs/CommonCore/so_long](docs/CommonCore/so_long/README.md) | [src/CommonCore/so_long](src/CommonCore/so_long) |
 
 ## Norma
 
@@ -45,6 +46,9 @@ make -C src/CommonCore/pipex
 # philosophers (mandatory / bonus)
 make -C src/CommonCore/philosophers/src/philo
 make -C src/CommonCore/philosophers/src/philo_bonus
+
+# so_long (requiere libft + gnl + MiniLibX; display X11 en Linux)
+make -C src/CommonCore/so_long
 ```
 
 Piscina Reloaded no tiene runner automatizado; ver [docs/PiscinaReloaded](docs/PiscinaReloaded/README.md) para pruebas manuales.
