@@ -13,6 +13,7 @@ Proyectos de mi paso por Badalona 43 (campus 42 Barcelona).
 | **pipex** | Pipeline tipo shell (`infile cmd1 \| cmd2 outfile`) | [docs/CommonCore/pipex](docs/CommonCore/pipex/README.md) | [src/CommonCore/pipex](src/CommonCore/pipex) |
 | **ft_printf** | Recreación de `printf` (`libftprintf.a`) | [docs/CommonCore/ft_printf](docs/CommonCore/ft_printf/README.md) | [src/CommonCore/ft_printf](src/CommonCore/ft_printf) |
 | **push_swap** | Ordenar un stack con operaciones limitadas | [docs/CommonCore/push_swap](docs/CommonCore/push_swap/README.md) | [src/CommonCore/push_swap](src/CommonCore/push_swap) |
+| **philosophers** | Filósofos comensales (threads/mutexes y bonus procesos/semáforos) | [docs/CommonCore/philosophers](docs/CommonCore/philosophers/README.md) | [src/CommonCore/philosophers](src/CommonCore/philosophers) |
 
 ## Norma
 
@@ -40,6 +41,10 @@ make -C src/CommonCore/pipex
 
 # push_swap (checker_linux; n=3 y n=5)
 ./tests/CommonCore/push_swap/run_tests.sh
+
+# philosophers (mandatory / bonus)
+make -C src/CommonCore/philosophers/src/philo
+make -C src/CommonCore/philosophers/src/philo_bonus
 ```
 
 Piscina Reloaded no tiene runner automatizado; ver [docs/PiscinaReloaded](docs/PiscinaReloaded/README.md) para pruebas manuales.
