@@ -29,6 +29,11 @@ src/CommonCore/CPP01/ex05/ex05
 src/CommonCore/CPP01/ex06/harlFilter
 src/CommonCore/CPP01/**/obj/
 src/CommonCore/CPP01/**/.vscode/
+src/CommonCore/CPP02/ex00/ex00
+src/CommonCore/CPP02/ex01/ex01
+src/CommonCore/CPP02/ex02/ex02
+src/CommonCore/CPP02/ex03/ex03
+src/CommonCore/CPP02/**/obj/
 # Prerequisites
 *.d
 
