@@ -92,7 +92,7 @@ ${PROJ_DIRS}:
 
 ${BIN_DIR}/${NAME}: ${LIBFT_LIB} ${GNL_LIB} ${OBJS} Makefile
 	@echo "${CYAN}Linking ${NAME}...${RST}"
-	@${CC} ${CFLAGS} ${SANITIZE_FLAGS} -L ${LIBFT_DIR}/bin -L ${GNL_DIR}/bin -o ${BIN_DIR}/${NAME} ${OBJS} -lft -lgnl  
+	@${CC} ${CFLAGS} ${SANITIZE_FLAGS} -L ${LIBFT_DIR}/bin -L ${GNL_DIR}/bin -o ${BIN_DIR}/${NAME} ${OBJS} -lgnl -lft
 
 ${OBJ_DIR}/%.o : ${SRC_DIR}/%.c Makefile
 	@echo "\t${YELLOW}Compiling ${RST} $<"

@@ -114,7 +114,7 @@ src/CommonCore/minishell/
 
 ## Notas
 
-- Enlace con `-lreadline -lft -lgnl`.
+- Enlace con `-lreadline -lgnl -lft`.
 - Prompt por defecto: `minishell> ` (con color vía `colours.h`).
 - Estilo C orientado a la [Norminette](../../../norma/norma_c.pdf).
 - No hay runner en `tests/` para este proyecto; validación habitual con modo `-c` o sesión interactiva.

@@ -52,7 +52,7 @@ ifdef	CSANITIZE
 	SANITIZE_FLAGS	= -g3 -fsanitize=address -fsanitize=leak
 endif
 
-LIBS_FLAG = -lreadline -lft -lgnl 
+LIBS_FLAG = -lreadline -lgnl -lft
 
 SRC = 	main.c									\
 		builtins/builtin_env.c					\
