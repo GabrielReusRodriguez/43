@@ -34,6 +34,11 @@ src/CommonCore/CPP02/ex01/ex01
 src/CommonCore/CPP02/ex02/ex02
 src/CommonCore/CPP02/ex03/ex03
 src/CommonCore/CPP02/**/obj/
+src/CommonCore/CPP03/ex00/ex00
+src/CommonCore/CPP03/ex01/ex01
+src/CommonCore/CPP03/ex02/ex02
+src/CommonCore/CPP03/ex03/ex03
+src/CommonCore/CPP03/**/obj/
 # Prerequisites
 *.d
 
