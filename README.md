@@ -19,6 +19,7 @@ Proyectos de mi paso por Badalona 43 (campus 42 Barcelona).
 | **minishell** | Shell mínima (readline, pipes, redirecciones, builtins) | [docs/CommonCore/minishell](docs/CommonCore/minishell/README.md) | [src/CommonCore/minishell](src/CommonCore/minishell) |
 | **CPP00** | Módulo C++98: megaphone, PhoneBook, Account | [docs/CommonCore/CPP00](docs/CommonCore/CPP00/README.md) | [src/CommonCore/CPP00](src/CommonCore/CPP00) |
 | **CPP01** | Módulo C++98: memory, refs, pointers to members, switch | [docs/CommonCore/CPP01](docs/CommonCore/CPP01/README.md) | [src/CommonCore/CPP01](src/CommonCore/CPP01) |
+| **CPP02** | Módulo C++98: Fixed, operator overloading, OCF, BSP | [docs/CommonCore/CPP02](docs/CommonCore/CPP02/README.md) | [src/CommonCore/CPP02](src/CommonCore/CPP02) |
 
 ## Norma
 
@@ -80,6 +81,14 @@ make -C src/CommonCore/CPP01/ex03
 make -C src/CommonCore/CPP01/ex04
 make -C src/CommonCore/CPP01/ex05
 make -C src/CommonCore/CPP01/ex06
+
+# CPP02 (C++98; no Norminette)
+./tests/CommonCore/CPP02/run_tests.sh
+# o
+make -C src/CommonCore/CPP02/ex00
+make -C src/CommonCore/CPP02/ex01
+make -C src/CommonCore/CPP02/ex02
+make -C src/CommonCore/CPP02/ex03
 ```
 
 Piscina Reloaded no tiene runner automatizado; ver [docs/PiscinaReloaded](docs/PiscinaReloaded/README.md) para pruebas manuales.
