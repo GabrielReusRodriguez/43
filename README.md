@@ -20,6 +20,7 @@ Proyectos de mi paso por Badalona 43 (campus 42 Barcelona).
 | **CPP00** | Módulo C++98: megaphone, PhoneBook, Account | [docs/CommonCore/CPP00](docs/CommonCore/CPP00/README.md) | [src/CommonCore/CPP00](src/CommonCore/CPP00) |
 | **CPP01** | Módulo C++98: memory, refs, pointers to members, switch | [docs/CommonCore/CPP01](docs/CommonCore/CPP01/README.md) | [src/CommonCore/CPP01](src/CommonCore/CPP01) |
 | **CPP02** | Módulo C++98: Fixed, operator overloading, OCF, BSP | [docs/CommonCore/CPP02](docs/CommonCore/CPP02/README.md) | [src/CommonCore/CPP02](src/CommonCore/CPP02) |
+| **CPP03** | Módulo C++98: Inheritance (ClapTrap → DiamondTrap) | [docs/CommonCore/CPP03](docs/CommonCore/CPP03/README.md) | [src/CommonCore/CPP03](src/CommonCore/CPP03) |
 
 ## Norma
 
@@ -89,6 +90,14 @@ make -C src/CommonCore/CPP02/ex00
 make -C src/CommonCore/CPP02/ex01
 make -C src/CommonCore/CPP02/ex02
 make -C src/CommonCore/CPP02/ex03
+
+# CPP03 (C++98; no Norminette)
+./tests/CommonCore/CPP03/run_tests.sh
+# o
+make -C src/CommonCore/CPP03/ex00
+make -C src/CommonCore/CPP03/ex01
+make -C src/CommonCore/CPP03/ex02
+make -C src/CommonCore/CPP03/ex03
 ```
 
 Piscina Reloaded no tiene runner automatizado; ver [docs/PiscinaReloaded](docs/PiscinaReloaded/README.md) para pruebas manuales.
