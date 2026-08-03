@@ -19,7 +19,16 @@ src/CommonCore/CPP00/ex02/account
 src/CommonCore/CPP00/ex02/obj/
 src/CommonCore/cube3d/cube3d
 src/CommonCore/cube3d/mlx42/
-
+src/CommonCore/CPP01/ex00/zombie
+src/CommonCore/CPP01/ex01/zombie
+src/CommonCore/CPP01/ex02/ex02
+src/CommonCore/CPP01/ex03/ex03
+src/CommonCore/CPP01/ex04/ex04
+src/CommonCore/CPP01/ex04/file.txt.replace
+src/CommonCore/CPP01/ex05/ex05
+src/CommonCore/CPP01/ex06/harlFilter
+src/CommonCore/CPP01/**/obj/
+src/CommonCore/CPP01/**/.vscode/
 # Prerequisites
 *.d
 
