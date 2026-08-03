@@ -17,6 +17,9 @@ src/CommonCore/CPP00/ex00/megaphone
 src/CommonCore/CPP00/ex01/phonebook
 src/CommonCore/CPP00/ex02/account
 src/CommonCore/CPP00/ex02/obj/
+src/CommonCore/cube3d/cube3d
+src/CommonCore/cube3d/mlx42/
+
 # Prerequisites
 *.d
 
