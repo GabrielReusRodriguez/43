@@ -18,6 +18,7 @@ Proyectos de mi paso por Badalona 43 (campus 42 Barcelona).
 | **cub3D** | Raycaster 3D con MLX42 (mapa `.cub`, texturas N/S/E/W) — WIP | [docs/CommonCore/cube3d](docs/CommonCore/cube3d/README.md) | [src/CommonCore/cube3d](src/CommonCore/cube3d) |
 | **minishell** | Shell mínima (readline, pipes, redirecciones, builtins) | [docs/CommonCore/minishell](docs/CommonCore/minishell/README.md) | [src/CommonCore/minishell](src/CommonCore/minishell) |
 | **CPP00** | Módulo C++98: megaphone, PhoneBook, Account | [docs/CommonCore/CPP00](docs/CommonCore/CPP00/README.md) | [src/CommonCore/CPP00](src/CommonCore/CPP00) |
+| **CPP01** | Módulo C++98: memory, refs, pointers to members, switch | [docs/CommonCore/CPP01](docs/CommonCore/CPP01/README.md) | [src/CommonCore/CPP01](src/CommonCore/CPP01) |
 
 ## Norma
 
@@ -68,6 +69,17 @@ make -C src/CommonCore/minishell
 make -C src/CommonCore/CPP00/ex00
 make -C src/CommonCore/CPP00/ex01
 make -C src/CommonCore/CPP00/ex02
+
+# CPP01 (C++98; no Norminette)
+./tests/CommonCore/CPP01/run_tests.sh
+# o
+make -C src/CommonCore/CPP01/ex00
+make -C src/CommonCore/CPP01/ex01
+make -C src/CommonCore/CPP01/ex02
+make -C src/CommonCore/CPP01/ex03
+make -C src/CommonCore/CPP01/ex04
+make -C src/CommonCore/CPP01/ex05
+make -C src/CommonCore/CPP01/ex06
 ```
 
 Piscina Reloaded no tiene runner automatizado; ver [docs/PiscinaReloaded](docs/PiscinaReloaded/README.md) para pruebas manuales.
