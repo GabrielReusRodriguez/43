@@ -1,6 +1,6 @@
 # get_next_line (Common Core)
 
-Función que lee un file descriptor línea a línea (`\n` / `\r`), manteniendo un buffer estático entre llamadas. Incluye variante bonus para varios FDs simultáneos. Compila como librería estática `libgnl.a` y reutiliza helpers de [libft](../libft/README.md).
+Función que lee un file descriptor línea a línea (`\n` / `\r`), manteniendo un buffer estático entre llamadas. Incluye variante bonus para varios FDs simultáneos. Compila como librería estática `libgnl.a` y depende de [libft](../libft/README.md) (`libft.a` + headers).
 
 ## Ubicación
 
@@ -16,17 +16,17 @@ Desde la raíz del repositorio:
 make -C src/CommonCore/gnl
 ```
 
-Requiere [`src/CommonCore/libft/`](../../../src/CommonCore/libft/) (el Makefile copia en build las piezas de libft que necesita: `ft_strjoin`, `ft_strlen`, `ft_istrchr`, `ft_substr`, `ft_pointer`, `ft_calloc`, `ft_strlcpy`, `ft_strlcat`, `ft_bzero`, `ft_memset`).
+Requiere [`src/CommonCore/libft/`](../../../src/CommonCore/libft/) (el Makefile la construye automáticamente y compila con `-I ../libft/include`).
 
-Genera `src/CommonCore/gnl/bin/libgnl.a`.
+Genera `src/CommonCore/gnl/bin/libgnl.a` (solo símbolos de gnl; los helpers viven en `libft.a`).
 
 Targets:
 
 | Target | Efecto |
 |--------|--------|
-| `all` | Importa helpers de libft, compila objetos en `build/` y arma `bin/libgnl.a` |
-| `clean` | Borra `build/` y la copia local `src/libft/` |
-| `fclean` | `clean` + borra `bin/` |
+| `all` | Construye libft, compila objetos en `build/` y arma `bin/libgnl.a` |
+| `clean` | Borra `build/` y hace `clean` en libft |
+| `fclean` | `clean` + borra `bin/` y hace `fclean` en libft |
 | `re` | `fclean` + `all` |
 
 Opcional: `make CSANITIZE=1` añade AddressSanitizer/LeakSanitizer (`-g3 -fsanitize=address -fsanitize=leak`).
@@ -36,8 +36,11 @@ Flags de compilación: `-Wall -Werror -Wextra` (+ dependencias `-MMD -MP`). Por 
 Uso típico al enlazar desde otro proyecto:
 
 ```bash
-cc -Wall -Wextra -Werror -I src/CommonCore/gnl/include \
-  main.c -L src/CommonCore/gnl/bin -lgnl
+cc -Wall -Wextra -Werror \
+  -I src/CommonCore/gnl/include -I src/CommonCore/libft/include \
+  main.c \
+  -L src/CommonCore/gnl/bin -L src/CommonCore/libft/bin \
+  -lgnl -lft
 ```
 
 ## Estructura
@@ -52,8 +55,7 @@ src/CommonCore/gnl/
 │   ├── ft_get_next_line.c        # un FD (static buffer)
 │   └── ft_get_next_line_bonus.c  # varios FDs (buffers[OPEN_MAX])
 ├── build/                  # objetos (.o) y deps (.d) — no versionado
-├── bin/libgnl.a            # librería estática — no versionada
-└── src/libft/, include/libft/  # copias temporales en build — no versionadas
+└── bin/libgnl.a            # librería estática — no versionada
 ```
 
 ## API
@@ -74,5 +76,5 @@ Comportamiento común:
 
 - Entrega pedagógica **tal como se usó** en el Common Core: nombres propios (`ft_get_next_line`, `ft_get_next_line_many_fds`) y dependencia de extensiones de libft (`ft_istrchr`, `ft_ptr_free`, etc.).
 - Estilo C orientado a la [Norminette](../../../norma/norma_c.pdf).
-- No hay runner en `tests/` para este proyecto; la validación habitual es compilar `libgnl.a` y usarla desde otros proyectos del Common Core.
-- `bin/`, `build/` y las copias temporales de libft no se versionan (ver `.gitignore` y `make clean`).
+- No hay runner en `tests/` para este proyecto; la validación habitual es compilar `libgnl.a` y usarla desde otros proyectos del Common Core (pipex, minishell, …) enlazando también `-lft`.
+- `bin/` y `build/` no se versionan (ver `.gitignore` y `make clean`).
