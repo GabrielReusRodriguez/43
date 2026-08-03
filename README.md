@@ -16,6 +16,7 @@ Proyectos de mi paso por Badalona 43 (campus 42 Barcelona).
 | **philosophers** | Filósofos comensales (threads/mutexes y bonus procesos/semáforos) | [docs/CommonCore/philosophers](docs/CommonCore/philosophers/README.md) | [src/CommonCore/philosophers](src/CommonCore/philosophers) |
 | **so_long** | Juego 2D con MiniLibX (mapa `.ber`, coleccionables y salida) | [docs/CommonCore/so_long](docs/CommonCore/so_long/README.md) | [src/CommonCore/so_long](src/CommonCore/so_long) |
 | **minishell** | Shell mínima (readline, pipes, redirecciones, builtins) | [docs/CommonCore/minishell](docs/CommonCore/minishell/README.md) | [src/CommonCore/minishell](src/CommonCore/minishell) |
+| **CPP00** | Módulo C++98: megaphone, PhoneBook, Account | [docs/CommonCore/CPP00](docs/CommonCore/CPP00/README.md) | [src/CommonCore/CPP00](src/CommonCore/CPP00) |
 
 ## Norma
 
@@ -53,6 +54,13 @@ make -C src/CommonCore/so_long
 
 # minishell (requiere libft + gnl + libreadline)
 make -C src/CommonCore/minishell
+
+# CPP00 (C++98; no Norminette)
+./tests/CommonCore/CPP00/run_tests.sh
+# o
+make -C src/CommonCore/CPP00/ex00
+make -C src/CommonCore/CPP00/ex01
+make -C src/CommonCore/CPP00/ex02
 ```
 
 Piscina Reloaded no tiene runner automatizado; ver [docs/PiscinaReloaded](docs/PiscinaReloaded/README.md) para pruebas manuales.
